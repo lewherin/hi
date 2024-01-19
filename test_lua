@@ -59,4 +59,11 @@ Tab:AddButton(
         end
     }
 )
+Tab:AddToggle({
+	Name = "auto fam",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
    
