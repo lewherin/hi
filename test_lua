@@ -50,15 +50,14 @@ local Section =
 --[[
 Name = <string> - The name of the section.
 ]]
-Tab:AddButton(
-    {
-        Name = "Fast_Attack",
-        Callback = function()
-            print("button pressed")
-            loadstring(game:HttpGet(("https://raw.githubusercontent.com/b3styskid/MAZI-API/main/Fast_Attack.lua"), true))()
-        end
-    }
-)
+Tab:AddToggle({
+	Name = "This is a toggle!",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+ loadstring(game:HttpGet(("https://raw.githubusercontent.com/b3styskid/MAZI-API/main/Fast_Attack.lua"), true))()
+	end    
+})
 Tab:AddToggle({
 	Name = "auto fam",
 	Default = false,
